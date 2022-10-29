@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	cursor: none;
+	background-color: #898786;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+span {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.info {
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+}
+
+.score {
+	text-align: center;
+	color: white;
+	font-size: 1rem;	
+}
+
+.best {
+	text-align: center;
+	color: white;
+	font-size: 1rem;	
+}
+
+.buttons {
+	text-align: center;	
+}
+
+.restart {
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #646261;
+	border: none;
+	border-radius: 0.313rem;
+	box-shadow: 0 0.563rem #999;
+}
+
+.restart:hover {
+	background-color: #3e8e41;
+}
+
+.restart:active {
+	background-color: #3e8e41;
+	box-shadow: 0 0.4rem #666;
+	transform: translateY(0.25rem);
+}
+
+
+label {
+	color: white;
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	margin-left: 1.875rem;
+}
+
+select {
+	margin-left: 0.063rem;
+	border-radius: 0.188rem;
+	color: #616361;
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+canvas {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 0;
+}
+
+/* Buttons hide onScreenControllers on desktop  */
+.touchControllerLeft {
+	display: none;
+}
+
+.touchControllerRight {
+	display: none;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1200px) {
+
+.mobileKeys {
+	color: #fff;
+	font-size: 2rem;
+	border: 2px solid #fff;
+	background-color: transparent;
+	width: 6rem;
+	border-radius: 0.313rem;
+	box-shadow: 0 0.563rem #999;
+}
+
+.mobileKeys:hover {
+	background-color: #666;
+}
+
+.mobileKeys:active {
+	background-color: #1BB534;
+	box-shadow: 0 0.4rem #666;
+	transform: translateY(0.25rem);
+}
+
+.touchControllerLeft {
+	float: left;
+	position: fixed;
+	top: 92%;
+	left: 2%;
+	z-index: 1;
+    display: flex;
+}
+
+.touchControllerRight {
+	float: right;
+	position: fixed;
+	top: 92%;
+	right: 2%;
+	z-index: 1;
+    display: flex;
+}
+
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google" content="notranslate">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styleMotocross.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>Motocross Rally</title>
+    </head>
+    <body>
+	<div class="Headline">
+		<h1>Motocross Rally</h1>
+	</div>
+	<div class="buttons">
+		<button class="restart" onclick="location.reload()">Restart</button>
+		<label for="inputList">Level:</label>
+		<select name="inputList" onchange="location = this.value;">
+			<option value="MotocrossEasy.html">Easy</option>
+			<option value="MotocrossNormal.html">Normal</option>
+		</select>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<p class="info"><span>&#8593;</span>Speed Up<span>&#8595;</span>Stop<span>&#8592;</span>Up<span>&#8594;</span>Down</p>
+			</div>
+			<div class="col-sm-4">
+				<p class="score">Score:<span id="scoreDisplay">0</span>Time:<span id="minutes"></span>:<span id="seconds"></span></p>
+			</div>
+			<div class="col-sm-4">
+				<p class="best">Highscore:<span id="highscoreDisplay">0</span>Best Time:<span id="bestTime"></span>Sec</p>
+			</div>
+		</div>
+		<canvas id="canvas"></canvas>
+		<!-- touchControllers buttons for mobile screens -->
+		<div class="touchControllerLeft">
+			<button class="mobileKeys" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">&#8681;</button>
+			<button class="mobileKeys" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">&#8678;</button>
+		</div>
+		<div class="touchControllerRight">
+			<button class="mobileKeys" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">&#8680;</button>
+			<button class="mobileKeys" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">&#8679;</button>
+		</div>
+	</div>
+		<script src="scriptMotocrossEasy.js"></script>
+    </body>
+</html>
