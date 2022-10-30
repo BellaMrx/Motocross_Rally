@@ -6,4 +6,4 @@
  Have fun
 
 
-![ImageMotocrossPreview](ImageMotocrossPreview.png)
+![Preview](http://url/to/ImageMotocrossPreview.png)
