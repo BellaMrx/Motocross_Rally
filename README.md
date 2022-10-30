@@ -5,5 +5,4 @@
 
  Have fun
 
-
-![Preview](http://url/to/ImageMotocrossPreview.png)
+![Preview](ImageMotocrossPreview.jpg)
