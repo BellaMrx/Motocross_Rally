@@ -6,4 +6,4 @@
  Have fun
 
 
-![My Image](ImageMotocrossPreview.png)
+![ImageMotocrossPreview](ImageMotocrossPreview.png)
