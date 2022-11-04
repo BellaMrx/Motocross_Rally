@@ -139,7 +139,13 @@ function loop() {
 		ctx.font = '20px Verdana sans-serif';
 		ctx.fillStyle = 'white';
 		ctx.fillText('Speed +1 Points', 65, 25);
+	}
+
+	// sound
+	if (speed > 0.2){
 		sound.play();
+	} else if (speed < 0.1){
+		sound.pause();
 	}
 	
 	// if player speed up +2 points
@@ -179,16 +185,10 @@ function loop() {
 	    	ctx.font = 'bold 60px Verdana sans-serif';
 			ctx.fillStyle = '#F4D03F';
 			ctx.fillText('Highscore', 450, 145); 
-		setTimeout (() => {
-			location.reload();
-		}, 3000);
 	} else if (player.x < 0 && score < highscore) {
 	    	ctx.font = 'bold 60px Verdana sans-serif';
 			ctx.fillStyle = 'red';
 			ctx.fillText('Game Over', 450, 145); 
-		setTimeout (() => {
-			location.reload();
-		}, 3000);
 	}
 	
 	
