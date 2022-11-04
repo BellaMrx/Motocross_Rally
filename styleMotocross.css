@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	cursor: none;
+	cursor: ;
 	background-color: #898786;
 }
 
@@ -97,7 +97,7 @@ canvas {
 }
 
 /* MOBILE */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
 
 .mobileKeys {
 	color: #fff;
