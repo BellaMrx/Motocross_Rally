@@ -8,8 +8,8 @@
 
  Preview
 
-![Preview](Images/PreviewMotocrossRally.PNG)
+![Preview](images/PreviewMotocrossRally.PNG)
 
  Mobile View
 
-![Preview](Images/PreviewMotocrossRallyMobileView.PNG)
+![Preview](images/PreviewMotocrossRallyMobileView.PNG)
