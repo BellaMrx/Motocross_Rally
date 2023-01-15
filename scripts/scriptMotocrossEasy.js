@@ -4,17 +4,17 @@ c.width = 1200;
 c.height = 400;
 document.body.appendChild(c);
 
-const sound = new Audio("motocrossSound.mp3");
+const sound = new Audio("../sounds/motocrossSound.mp3");
 
 var perm = [];
-while (perm.length < 255){
-	while(perm.includes(val = Math.floor(Math.random()*255)));	
+while (perm.length < 100){
+	while(perm.includes(val = Math.floor(Math.random()*100)));	
 	perm.push(val);
 }
 
 var lerp = (a,b,t) => a + (b-a) * (1-Math.cos(t*Math.PI))/2;
 var noise = x => {
-	x=x * 0.01 % 254; 		// must be smaller than 255 otherwise player hangs when loop is over
+	x=x * 0.01 % 99; 	// must be smaller than 100 otherwise player hangs when loop is over
 	return lerp(perm[Math.floor(x)], perm[Math.ceil(x)], x - Math.floor(x));
 }
 	
@@ -27,7 +27,7 @@ var player = new function(){
 	this.rSpeed = 0;
 
 	this.img = new Image();
-	this.img.src = "motocross.png";
+	this.img.src = "../images/motocross.PNG";
     this.draw = function(){
 		var p1 = c.height - noise(t + this.x) * 0.25;
 		var p2 = c.height - noise(t + 5 + this.x) * 0.25;
@@ -99,7 +99,7 @@ function timeStart (intervalStart){
     }, 1000);
 
 
-var t = 0;  	//starting point, starts at 0 ends at 255 and then starts from the beginning in the loop
+var t = 0; 		//starting point, starts at 0 ends at 255 and then starts from the beginning in the loop
 var speed = 0;
 var playing = true;
 var k = {ArrowUp:0, ArrowDown:0, ArrowLeft:0, ArrowRight:0};
@@ -107,8 +107,6 @@ var score = 0;
 var score_span = document.getElementById("scoreDisplay");
 var highscore = localStorage.getItem("highscore");
 var highscore_span = document.getElementById("highscoreDisplay");
-
-
 
 function loop() {
 	speed -= (speed - (k.ArrowUp - k.ArrowDown)) * 0.01;
@@ -136,11 +134,11 @@ function loop() {
 	
 	// makes score
 	if (speed > 0.1 && playing === true){
-		score += 2;
+		score++;
 		score_span.innerHTML = score;
 		ctx.font = '20px Verdana sans-serif';
 		ctx.fillStyle = 'white';
-		ctx.fillText('Speed +2 Points', 65, 25);
+		ctx.fillText('Speed +1 Points', 65, 25);
 	}
 
 	// sound
@@ -152,11 +150,11 @@ function loop() {
 	
 	// if player speed up +2 points
 	if (speed > 0.9 && playing === true){
-		score += 3;
+		score += 2;
 		score_span.innerHTML = score;
 		ctx.font = '20px Verdana sans-serif';
 		ctx.fillStyle = 'yellow';
-		ctx.fillText('Speed Up +3 Points', 65, 65);
+		ctx.fillText('Speed Up +2 Points', 65, 65);
 	}
 		
 	// if player rotate +100 points
@@ -182,7 +180,7 @@ function loop() {
 
 	highscore_span.innerHTML = highscore;
 	
-	//highscore or game over display
+	//reload page when player down
 	if(player.x < 0 && score > highscore) {
 	    	ctx.font = 'bold 60px Verdana sans-serif';
 			ctx.fillStyle = '#F4D03F';
@@ -200,7 +198,7 @@ function loop() {
 
 
 onkeydown = d => k[d.key] = 1;
-onkeyup = d => k[d.key] = 0;
+onkeyup = d => k [d.key] = 0;
 
 
 function moveup() {

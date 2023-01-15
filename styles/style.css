@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	cursor: ;
+	cursor: none;
 	background-color: #898786;
 }
 
@@ -87,6 +87,48 @@ canvas {
 	z-index: 0;
 }
 
+
+
+div > .contact {
+	float: right;
+	position: fixed;
+	top: 94%;
+	right: 40%;
+	z-index: 1;
+    display: flex;
+}
+
+#link {
+	font-size: 1.5vw;
+	margin: 0 0 0 0.1px; 
+}
+
+/* for Twitter, GitHub icon */
+.fa {
+	font-size: 1.5vw;
+	text-decoration: none;
+	margin: 0 0 0 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+}
+
+.fa-github {
+	color: #000000;
+}
+
+span {
+	color: aliceblue;
+}
+
+
+
 /* Buttons hide onScreenControllers on desktop  */
 .touchControllerLeft {
 	display: none;
@@ -97,7 +139,7 @@ canvas {
 }
 
 /* MOBILE */
-@media only screen and (max-width: 1370px) {
+@media only screen and (max-width: 1100px) {
 
 .mobileKeys {
 	color: #fff;
@@ -122,7 +164,7 @@ canvas {
 .touchControllerLeft {
 	float: left;
 	position: fixed;
-	top: 92%;
+	top: 90%;
 	left: 2%;
 	z-index: 1;
     display: flex;
@@ -131,12 +173,51 @@ canvas {
 .touchControllerRight {
 	float: right;
 	position: fixed;
-	top: 92%;
+	top: 90%;
 	right: 2%;
 	z-index: 1;
     display: flex;
 }
 
+
+
+div > .contact {
+	float: right;
+	position: fixed;
+	top: 92%;
+	right: 30%;
+	z-index: 1;
+    display: flex;
 }
 
+#link {
+	font-size: 3vw;
+	margin: 0 0 0 0.1px; 
+}
+
+/* for Twitter, GitHub icon */
+.fa {
+	font-size: 3vw;
+	text-decoration: none;
+	margin: 0 0 0 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+}
+
+.fa-github {
+	color: #000000;
+}
+
+span {
+	color: aliceblue;
+}
+
+}
 
