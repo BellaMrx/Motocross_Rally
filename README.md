@@ -9,7 +9,3 @@
  Preview
 
 ![Preview](images/PreviewMotocrossRally.PNG)
-
- Mobile View
-
-![Preview](images/PreviewMotocrossRallyMobileView.PNG)
