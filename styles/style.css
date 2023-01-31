@@ -98,7 +98,7 @@ div > .contact {
     display: flex;
 }
 
-#link {
+.link {
 	font-size: 1.5vw;
 	margin: 0 0 0 0.1px; 
 }
@@ -108,6 +108,7 @@ div > .contact {
 	font-size: 1.5vw;
 	text-decoration: none;
 	margin: 0 0 0 20px;
+	text-shadow: 2px 2px 4px #000;
 }
 
 .fa:hover {
