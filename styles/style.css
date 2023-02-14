@@ -64,7 +64,6 @@ span {
 	transform: translateY(0.25rem);
 }
 
-
 label {
 	color: white;
 	font-size: 1rem;
@@ -87,15 +86,13 @@ canvas {
 	z-index: 0;
 }
 
-
-
 div > .contact {
 	float: right;
 	position: fixed;
 	top: 94%;
 	right: 40%;
 	z-index: 1;
-    display: flex;
+	display: flex;
 }
 
 .link {
@@ -112,7 +109,7 @@ div > .contact {
 }
 
 .fa:hover {
-    opacity: 0.7;
+	opacity: 0.7;
 	text-decoration: none;
 }
 
@@ -129,7 +126,6 @@ span {
 }
 
 
-
 /* Buttons hide onScreenControllers on desktop  */
 .touchControllerLeft {
 	display: none;
@@ -138,6 +134,7 @@ span {
 .touchControllerRight {
 	display: none;
 }
+
 
 /* MOBILE */
 @media only screen and (max-width: 1100px) {
