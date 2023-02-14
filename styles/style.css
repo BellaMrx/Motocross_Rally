@@ -142,83 +142,82 @@ span {
 /* MOBILE */
 @media only screen and (max-width: 1100px) {
 
-.mobileKeys {
-	color: #fff;
-	font-size: 2rem;
-	border: 2px solid #fff;
-	background-color: transparent;
-	width: 6rem;
-	border-radius: 0.313rem;
-	box-shadow: 0 0.563rem #999;
-}
+	.mobileKeys {
+		color: #fff;
+		font-size: 2rem;
+		border: 2px solid #fff;
+		background-color: transparent;
+		width: 6rem;
+		border-radius: 0.313rem;
+		box-shadow: 0 0.563rem #999;
+	}
 
-.mobileKeys:hover {
-	background-color: #666;
-}
+	.mobileKeys:hover {
+		background-color: #666;
+	}
 
-.mobileKeys:active {
-	background-color: #1BB534;
-	box-shadow: 0 0.4rem #666;
-	transform: translateY(0.25rem);
-}
+	.mobileKeys:active {
+		background-color: #1BB534;
+		box-shadow: 0 0.4rem #666;
+		transform: translateY(0.25rem);
+	}
 
-.touchControllerLeft {
-	float: left;
-	position: fixed;
-	top: 90%;
-	left: 2%;
-	z-index: 1;
-    display: flex;
-}
+	.touchControllerLeft {
+		float: left;
+		position: fixed;
+		top: 90%;
+		left: 2%;
+		z-index: 1;
+		display: flex;
+	}
 
-.touchControllerRight {
-	float: right;
-	position: fixed;
-	top: 90%;
-	right: 2%;
-	z-index: 1;
-    display: flex;
-}
+	.touchControllerRight {
+		float: right;
+		position: fixed;
+		top: 90%;
+		right: 2%;
+		z-index: 1;
+		display: flex;
+	}
 
 
+	div > .contact {
+		float: right;
+		position: fixed;
+		top: 92%;
+		right: 30%;
+		z-index: 1;
+		display: flex;
+	}
 
-div > .contact {
-	float: right;
-	position: fixed;
-	top: 92%;
-	right: 30%;
-	z-index: 1;
-    display: flex;
-}
+	#link {
+		font-size: 3vw;
+		margin: 0 0 0 0.1px; 
+	}
 
-#link {
-	font-size: 3vw;
-	margin: 0 0 0 0.1px; 
-}
+	/* for Twitter, GitHub icon */
+	.fa {
+		font-size: 3vw;
+		text-decoration: none;
+		margin: 0 0 0 20px;
+	}
 
-/* for Twitter, GitHub icon */
-.fa {
-	font-size: 3vw;
-	text-decoration: none;
-	margin: 0 0 0 20px;
-}
+	.fa:hover {
+		opacity: 0.7;
+		text-decoration: none;
+	}
 
-.fa:hover {
-    opacity: 0.7;
-	text-decoration: none;
-}
+	.fa-twitter {
+		color: #55ACEE;
+	}
 
-.fa-twitter {
-	color: #55ACEE;
-}
+	.fa-github {
+		color: #000000;
+	}
 
-.fa-github {
-	color: #000000;
-}
-
-span {
-	color: aliceblue;
-}
+	span {
+		color: aliceblue;
+	}
 
 }
 
